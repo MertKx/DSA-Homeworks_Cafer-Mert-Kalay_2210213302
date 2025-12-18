@@ -1,0 +1,9 @@
+We use pre-order traversal mainly because it follows a 'top-down' logic, 
+which is perfect for copying or cloning a tree. Since we visit the root 
+node first before looking at its children, we can create the parent node 
+and then easily attach its branches. It is also very helpful for showing 
+the structure of a document or a folder system. For example, when you look
+ at a book’s table of contents, you see the chapter title first and then 
+the sub-sections; this is exactly how pre-order works. In short, we use it 
+whenever the 'leader' or the 'parent' information is the most important 
+part to start with.
