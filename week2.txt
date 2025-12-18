@@ -1,0 +1,15 @@
+In this hw, I will analyze some algorithm for their time complexities
+
+Algo1: This is a simple loop that goes from 1 to $n$. Since the number of operations increases linearly with n, the complexity is O(n).
+
+Algo2: This code has a nested loop. For every iteration of the outer loop (n), the inner loop also runs n times. Therefore, it is $n \times n$, which gives us O(n^2).
+
+Algo3: In this loop, the variable i doubles in each step (i = i * 2). This means the loop reaches n very quickly in a logarithmic way. So, the complexity is O(\log_2 n).
+
+Algo4: Similar to the previous one, the variable is divided by 5 each time (i = i / 5). Because the value decreases exponentially, the step count is logarithmic: O(\log_5 n).
+
+Algo5: Here, the loop runs until i reaches n^3 by multiplying by 5. Even though the limit is n^3, it still follows a logarithmic pattern. According to log rules, \log(n^3) = 3 \log n. Since we drop constants in Big O, it is O(\log_5 n^3)
+
+Algo6: The condition is i^2 lower equal n. If we take the square root of both sides, it becomes i lower equal sqrt{n}. This means the loop runs square root of n times, so it is O(sqrt{n}).
+
+Algo7: This one is a bit tricky. The variable k increases by i in each step (1, 1+2, 1+2+3...). This is a summation series. When the sum reaches n, the number of steps is proportional to the square root of n. Thus, the complexity is O(sqrt{n}).
