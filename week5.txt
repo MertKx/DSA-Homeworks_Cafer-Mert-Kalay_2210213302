@@ -1,0 +1,11 @@
+The Shunting Yard Algorithm is used to convert expressions from infix 
+(like $a + b$) to postfix (like $ab+$). It uses a Stack to store operators 
+and follows specific rules based on operator precedence. For example,
+ multiplication ($*$) is processed before addition ($+$). When we see an 
+operand (a letter or number), we move it directly to the output. 
+
+If we see an operator, we check the stack; if the operator in the stack 
+has higher priority, we pop it to the output first. Parentheses are special;
+ we push the opening bracket to the stack and pop everything inside 
+it when we find the closing bracket. This method ensures the computer can
+calculate mathematical expressions easily without needing parentheses.
